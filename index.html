@@ -67,7 +67,14 @@ headers: { 'Accept': 'application/json' }
 });
 
 if (response.ok) {
-window.location.href = 'https://yookassa.ru/my/i/atpCzSUpxTwz/l';
+    window._tmr = window._tmr || [];
+    window._tmr.push({
+        type: 'reachGoal',
+        id: 3811396,
+        goal: 'lead_submitted'
+    });
+
+    window.location.href = 'https://yookassa.ru/my/i/atpCzSUpxTwz/l';
 } else {
 alert('Не удалось отправить заявку. Попробуйте ещё раз.');
 button.disabled = false;
